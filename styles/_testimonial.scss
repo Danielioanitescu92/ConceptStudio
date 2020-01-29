@@ -1,0 +1,95 @@
+section {
+    .testimonial {
+        background-image: linear-gradient($black90), url("../assets/headers/architecture-carpet-chair-comfort-276534.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 70%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+        overflow-y: hidden;
+        .container {
+            overflow-y: hidden;
+            .row {
+                .text {
+                    div {
+                        .title {
+                            p {
+                                span {
+                                    color: $onwhite;
+                                }
+                            }
+                        }
+                        .singer {
+                            color: $onwhite;
+                        }
+                    }
+                }
+            }
+        }
+        .tunu {
+            .row {
+                .pics {
+                    .pic {
+                        background: url("../assets/processed/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-736716.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 60% 0%;
+                    }
+                }
+            }
+        }
+        .tdoi {
+            .row {
+                .pics {
+                    .pic {
+                        background: url("../assets/processed/woman-wearing-black-eyeglasses-1239291.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 40% 0%;
+                    }
+                }
+            }
+        }
+        .ttrei {
+            .row {
+                .pics {
+                    .pic {
+                        background: url("../assets/processed/women-s-white-and-black-button-up-collared-shirt-774909.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+        }
+        .tpatru {
+            .row {
+                .pics {
+                    .pic {
+                        background: url("../assets/processed/man-young-happy-smiling-91227.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 50% 0%;
+                    }
+                }
+            }
+        }
+    }
+    .ourclients {
+        overflow: hidden;
+        .title {
+            .normal {
+                color: $black;
+                font-size: 2.3rem;
+            }
+            .big {
+                color: $onwhitelight;
+                font-size: 4.5rem;
+            }
+        }
+        .text {
+            p{
+                color: $onwhite;
+            }
+        }
+    }
+}

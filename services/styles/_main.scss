@@ -1,0 +1,91 @@
+main {
+    overflow: hidden;
+    padding-left: 100px;
+    padding-right: 100px;
+    .btelft {
+        display: none;
+        left: 100px;
+        bottom: -550px;
+        z-index: 2;
+    }
+    .btright {
+        display: none;
+        right: 10px;
+        bottom: -550px;
+        z-index: 2;
+    }
+    .lax {
+        overflow: hidden;
+    }
+    .first {
+        .title {
+            .normal {
+                color: $white;
+                font-size: 2.5rem;
+            }
+            .big {
+                color: $onwhitelight;
+                font-size: 4.5rem;
+            }
+        }
+        .text {
+            font-size: 1rem;
+        }
+    }
+    div {
+        overflow: hidden;
+        .first {
+            .text {
+                p{
+                    color: $whitemed;
+                }
+            }
+        }
+        .second::-webkit-scrollbar {
+            display: none;
+        }
+        .second {
+            height: 100%;
+            max-width: 700px;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            .serv {
+                min-width: 175px;
+                max-width: 200px;
+                height: 337px;
+                background-image: $videosl;
+                margin: 1vw;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+                .title {
+                    .name {
+                        color: $whitemed;
+                        font-size: 0.75rem;                        
+                    }
+                    .price {
+                        b {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+                .services {
+                    .sv {
+                        padding: 10px;
+                        border-color: $black90 !important;
+                        div {
+                            font-size: 0.65rem;
+                        }
+                    }
+                }
+                .contact {
+                    div {
+                        a {
+                            text-decoration: none;
+                            color: $whitemed;
+                            font-size: 0.55rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

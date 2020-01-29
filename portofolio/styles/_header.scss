@@ -1,0 +1,98 @@
+header {
+    background-image: url('../assets/headers/porto\ header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    .menu {
+        height: 100vh;
+        width: 100vw;
+        background-color: $menu;
+        z-index: 3;
+        .nav {
+            ul {
+                li {
+                    form {
+                        input[type=text] {
+                            background-color: $gray;
+                            color: white;
+                            background-image: url('../assets/processed/Group\ 174.png');
+                            background-position: 10px 6px;
+                            background-repeat: no-repeat;
+                            border: 2px solid $grayhard;
+                            border-radius: 10px;
+                            padding: 6px 20px 6px 70px;
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $whitemed;
+                    }
+                }
+                li:nth-child(2) {
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    .modal {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed !important;
+        width: 100vw;
+        height: 100vh;
+        z-index: 5;
+        .cont {
+            background-color: $black90;
+            width: 100vw;
+            height: 100vh;
+            z-index: 6;
+        }
+        .closing {
+            img {
+                position: absolute;
+                right: 48px;
+                top: 25px;
+                opacity: 0.5;
+                z-index: 7;
+            }
+        }
+        .video {
+            width: 75%;
+            height: 75%;
+            z-index: 7;
+            video {
+                object-fit: cover;
+            }
+            .name {
+                top: 48px;
+                left: 48px;
+            }
+        }
+    }
+    height: 100vh;
+    width: 100vw;
+    nav {
+        .row {
+            div {
+                color: $whitemed; 
+            }
+            .actual {
+                color: $white;
+            }
+        }
+    }
+    .bord {
+        background: url("../assets/processed/C\ Iphone\ Border.png");
+        background-size: cover;
+        height: 31px;
+        width: 100vw;
+    }
+}
+
+@import "./nav";
+@import "./sidebar";
+@import "./lowbar";

@@ -1,0 +1,54 @@
+main {
+    overflow: hidden;
+    padding-left: 100px;
+    padding-right: 100px;
+    .lax {
+        overflow: hidden;
+    }
+    .first {
+        .title {
+            .normal {
+                color: $white;
+                font-size: 2.5rem;
+            }
+            .big {
+                color: $onwhitelight;
+                font-size: 4.5rem;
+            }
+        }
+        .text {
+            font-size: 1rem;
+        }
+    }
+    div {
+        overflow: hidden;
+        .first {
+            .text {
+                p{
+                    color: $whitemed;
+                }
+            }
+        }
+        .second {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            .serv {
+                width: 300px;
+                height: 120px;
+                background-image: $videosl;
+                margin: 1vw;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+                .writing {
+                    .title {
+                        color: $whitemed;
+                        font-size: 1rem;
+                    }
+                    .details {
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+        }
+    }
+}

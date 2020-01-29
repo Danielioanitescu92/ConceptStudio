@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/style.scss">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Concept Studio Portofolio</title>
+</head>
+<body>
+
+    <header id="header" class="d-flex flex-column">
+
+        
+        <div class="modal position-absolute d-flex">
+            <div class="cont position-absolute"></div>
+            <div class="closing">
+                <img src="assets/processed/Group 118.png" alt="close" style="cursor: pointer;">
+            </div>
+            <div class="video position-relative m-auto d-flex" style="overflow: hidden;">
+                <video src="../assets/one.mp4" class="m-auto" width="100%" height="100%" controls poster="../assets/headers/person-singing-1370545.jpg">        Browser not supporting this video.
+                </video>
+                <div class="name position-absolute">
+                    <div class="title mb-2">
+                        <b style="font-size: 0.75rem;"></b>
+                    </div>
+                    <div class="song mb-2">
+                        <p class="m-0" style="font-size: 0.75rem;"><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider position-fixed d-flex flex-row flex-nowrap"  style="z-index: 4; height: 100vh; left:-245px">
+            
+            <div class="videosl p-4" style="width: 245px;">
+                
+                <div class="closing position-absolute" style="display: none; right: 20px; top: 20px; z-index: 4;">
+                    <img src="assets/processed/Group 118.png" alt="cube" style="width: 31px; height: 31px; cursor: pointer; transform: rotate(180deg);">
+                </div>
+
+                <div class="bttup position-absolute" style="top: 10px; left: 100px;">
+                    <a href="#film1">
+                        <img src="assets/processed/Backward.png" alt="top">
+                    </a>
+                </div>
+
+                <div class="bttbottom position-absolute" style="bottom: 10px; left: 100px;">
+                    <a href="#film7">
+                        <img src="assets/processed/Backward.png" alt="bottom" style="transform: rotate(180deg);">
+                    </a>
+                </div>
+
+                <div class="video mb-4 d-flex flex-column" style="font-size: 14px;">
+                    <div id="film1" class="film1 d-flex flex-row">
+                        <img class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer;" onclick="openmodal(a)">
+                    </div>
+                    <div class="text py-4">
+                        <b >MR. SINGER & MISS STAR</b>
+                        <div class="pt-2">
+                            <p class="m-0">One New Song<br>
+                            Killer Beats Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video mb-4 d-flex flex-column" style="font-size: 14px;">
+                    <div class="film2 d-flex flex-row">
+                        <img class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer;" onclick="openmodal(b)">
+                    </div>
+                    <div class="text py-4">
+                        <b >TEENAGERS</b>
+                        <div class="pt-2">
+                            <p class="m-0">We're cool<br>
+                            Killer Beats Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video mb-4 d-flex flex-column" style="font-size: 14px;">
+                    <div class="film3 d-flex flex-row">
+                        <img class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer;" onclick="openmodal(c)">
+                    </div>
+                    <div class="text py-4">
+                        <b >SMOKE GUY</b>
+                        <div class="pt-2">
+                            <p class="m-0">I'm on fire<br>
+                            Killer Beats Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video mb-4 d-flex flex-column" style="font-size: 14px;">
+                    <div class="film4 d-flex flex-row">
+                        <img class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer;" onclick="openmodal(d)">
+                    </div>
+                    <div class="text py-4">
+                        <b >G-GANG</b>
+                        <div class="pt-2">
+                            <p class="m-0">Awesomeous<br>
+                            Killer Beats Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video mb-4 d-flex flex-column" style="font-size: 14px;">
+                    <div class="film5 d-flex flex-row">
+                        <img class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer;" onclick="openmodal(e)">
+                    </div>
+                    <div class="text py-4">
+                        <b >SUPERSTAR</b>
+                        <div class="pt-2">
+                            <p class="m-0">Another Tune<br>
+                            Killer Beats Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video mb-4 d-flex flex-column" style="font-size: 14px;">
+                    <div class="film6 d-flex flex-row">
+                        <img class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer;" onclick="openmodal(f)">
+                    </div>
+                    <div class="text py-4">
+                        <b >THE GUITARIST</b>
+                        <div class="pt-2">
+                            <p class="m-0">Notes on music<br>
+                            Killer Beats Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video mb-4 d-flex flex-column" style="font-size: 14px;">
+                    <div id="film7" class="film7 d-flex flex-row">
+                        <img class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer;" onclick="openmodal(g)">
+                    </div>
+                    <div class="text py-4">
+                        <b >THE NEW GUY</b>
+                        <div class="pt-2">
+                            <p class="m-0">Bomb Track<br>
+                            Killer Beats Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="sidebar position-relative" style="display: flex; flex-direction: column;">
+                <div class="mb-auto d-flex">
+                    <img class="opener m-auto" src="assets/processed/Union 31.png" alt="cube"  style="cursor: pointer;">
+                </div>            
+                <div class="social d-flex flex-column">
+                    <i class="fab fa-instagram mx-auto mb-4" style="cursor: pointer;"></i>
+                    <i class="fab fa-twitter mx-auto mb-4" style="cursor: pointer;"></i>
+                    <i class="fab fa-facebook mx-auto mb-4" style="cursor: pointer;"></i>
+                    <i class="fas fa-envelope mx-auto" style="cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu position-fixed d-flex flex-column" style="padding-left: 137px; padding-right: 137px; left: 100vw;">
+            <div class="back position-absolute d-flex" style="width: 100vw; height: 80px;">
+                <a href="../index.html" class="m-auto"><img src="assets/processed/A B PC Ipad logo.png" alt="Concept Studio" style="width: 216px; height: 79px;"></a>
+                <img class="cls position-absolute" src="assets/processed/Group 118.png" alt="close" style="width: 31px; height: 31px; top: 25px; right: 20px;">
+            </div>
+            <div class="nav mx-auto" style="margin-top: 127px; overflow: hidden;">
+                <ul style="font-size: 20px; overflow: hidden;">
+                    <li class="text-center mb-5"><a href="../index.html">HOME</a></li>
+                    <li class="text-center mb-5"><a href="#">PORTOFOLIO</a></li>
+                    <li class="text-center mb-5"><a href="../equipment/index.html">EQUIPMENT</a></li>
+                    <li class="text-center mb-5"><a href="../services/index.html">SERVICES</a></li>
+                    <li class="text-center mb-5"><a href="../contact/index.html">CONTACT</a></li>
+                    <li>
+                        <form action="">
+                            <input type="text">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        
+
+        <nav class="nav position-absolute container-fluid" style="padding-left: 100px; padding-right: 36px; overflow-y: hidden;">
+            <div class="name col pl-5 pr-0">
+                <a href="../index.html" style="cursor: pointer;">
+                    <img src="assets/processed/A B PC Ipad logo.png" alt="Concept Studio" style="cursor: pointer;">
+                </a>
+            </div>
+            <div class="col container my-auto pl-0">
+                <div class="row navmenu d-flex flex-nowrap justify-content-between">
+                    <div class="home actual pl-3"><a href="../index.html">HOME</a></div>
+                    <div><a href="#">PORTOFOLIO</a></div>
+                    <div><a href="../equipment/index.html">EQUIPMENT</a></div>
+                    <div><a href="../services/index.html">SERVICES</a></div>
+                    <div><a href="../contact/index.html">CONTACT</a></div>
+                    <div class="search">
+                        <img src="assets/processed/Search.png" alt="search" style="cursor: pointer;">
+                    </div>
+                </div>
+                <div class="formsearch">
+                    <div class="gosearch">
+                        <img src="assets/processed/Search.png" alt="search" style="cursor: pointer;">
+                    </div>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                    <div class="closesearsch">
+                        <img src="assets/processed/twotone_close_white_18dp.png" alt="search" style="cursor: pointer;">
+                    </div>
+                </div> 
+            </div>
+        </nav>          
+        
+        <div class="burger d-none">
+            <img src="assets/processed/Menu.png" alt="nav" style="cursor: pointer; width: 24px; height:24px;">
+        </div>
+
+        <div class="pagetitle container-fluid my-auto d-flex flex-row" style="padding-left: 100px; padding-right: 48px;">
+            <div class="sm container col pr-0 pl-5 ml-0 mr-auto d-flex flex-column">
+                <div style="max-width: 225px; overflow-y: hidden;">
+                    <div class="title d-flex flex-row mb-2">
+                        <img class="my-1" src="assets/processed/Union 31.png" alt="portofolio" style="width: 0.6rem; height: 0.6rem;">
+                        <b class="pl-3 m-0 py-0" style="font-size: 0.8rem;">SERVICES</b>
+                    </div>
+                    <div class="underline mb-2" style="width: 100%; height: 2px; background-color: rgb(250,250,250);"></div>
+                    <div class="text">
+                        <p style="font-size: 0.8rem;">Click on "details" to check the services we provide. Or just click on the buttons from the sidebar to check our social media.</p>
+                    </div>
+                    <a href="../services/index.html" class="details d-flex flex-row justify-content-between flex-nowrap" style="width: 7rem; cursor: pointer; text-decoration: none; color: white;">
+                        <b style="font-size: 0.8rem;">DETAILS</b>
+                        <div class="arrow d-flex">
+                            <img class="m-auto" src="assets/processed/Group 5.png" alt="details" style="width:12px; height:12px;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="lg container col ml-0 mr-auto d-flex" style="min-width: 225px; scroll-padding-left: 16px; padding-right: 48px;">
+                <div class="lgdiv" style="width: 300px;  overflow-y: hidden;">
+                    <div class="title d-flex flex-row mb-2">
+                        <b style="font-size: 60px; line-height: 90%; overflow-y: hidden;">CONCEPT<br>STUDIO</b>
+                    </div>
+                    <div class="text" style="font-size: 16px;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iure possimus consequatur?</p>
+                    </div>
+                    <a href="../contact/index.html" class="details d-flex flex-row justify-content-between flex-nowrap" style="width: 7rem; cursor: pointer; text-decoration: none; color: white;">
+                        <b>CONTACT</b>
+                        <div class="arrow d-flex">
+                            <img class="m-auto" src="assets/processed/Group 5.png" alt="details" style="width:12px; height:12px;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="lowbar position-absolute container-fluid pr-5" style="bottom: 0; padding-left: 100px; margin-top: auto; overflow-y: hidden; max-height: 130px; width: 100vw;">
+            
+            <div class="row wow slow unu d-flex flex-row">
+                <div class="names col mt-3 d-flex flex-column pl-5">
+                    <div class="artist mb-2">
+                        <b>MR. SINGER & MISS STAR</b>
+                    </div>
+                    <div class="song mb-auto">
+                        <p class="m-0">One New Song<br>Killer Beats Studio</p>
+                    </div>
+                    <div class="switch d-flex flex-row mb-4">
+                        <div class="cerc marked" style="cursor: pointer;"  onclick="currentSlide(1)"></div>
+                        <div class="cerc ml-2" style="cursor: pointer;"  onclick="currentSlide(2)"></div>
+                        <div class="cerc ml-2" style="cursor: pointer;"  onclick="currentSlide(3)"></div>
+                        <div class="cerc ml-2" style="cursor: pointer;"  onclick="currentSlide(4)"></div>
+                    </div>
+                </div>
+                <div class="eqused col mt-3">
+                    <div class="artist mb-2">
+                        <b>EQUIPMENT USED</b>
+                    </div>
+                    <div class="equsedd">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quidem.</p>
+                    </div>
+                </div>
+                <div class="videosmall col my-0">
+                    <div class="video mx-auto d-flex flex-row">
+                        <div class="playbtn m-auto">
+                            <img src="assets/processed/Play.png" alt="play video" style="cursor: pointer;"  onclick="openmodal(a)">
+                        </div>
+                    </div>
+                </div>
+                <div class="testim col mt-3 d-flex flex-column text-right">
+                    <div class="artist mb-2">
+                        <b>MR. SINGER SAID:</b>
+                    </div>
+                    <div class="equsedd mb-auto">
+                        <p class="m-0">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                    </div>
+                    <div class="readmore m-0">
+                        <p class="mb-4"><a href="../index.html">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row wow slow doi d-flex flex-row">
+                <div class="names col mt-3 d-flex flex-column pl-5">
+                    <div class="artist mb-2">
+                        <b>THE NEW GUY</b>
+                    </div>
+                    <div class="song mb-auto">
+                        <p class="m-0">Bomb Track<br>Killer Beats Studio</p>
+                    </div>
+                    <div class="switch d-flex flex-row mb-4">
+                        <div class="cerc" style="cursor: pointer;"  onclick="currentSlide(1)"></div>
+                        <div class="cerc marked ml-2" style="cursor: pointer;"  onclick="currentSlide(2)"></div>
+                        <div class="cerc ml-2" style="cursor: pointer;"  onclick="currentSlide(3)"></div>
+                        <div class="cerc ml-2" style="cursor: pointer;"  onclick="currentSlide(4)"></div>
+                    </div>
+                </div>
+                <div class="eqused col mt-3">
+                    <div class="artist mb-2">
+                        <b>EQUIPMENT USED</b>
+                    </div>
+                    <div class="equsedd">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quidem.</p>
+                    </div>
+                </div>
+                <div class="videosmall col my-0">
+                    <div class="video mx-auto d-flex flex-row">
+                        <div class="playbtn m-auto">
+                            <img src="assets/processed/Play.png" alt="play video" style="cursor: pointer;"  onclick="openmodal(g)">
+                        </div>
+                    </div>
+                </div>
+                <div class="testim col mt-3 d-flex flex-column text-right">
+                    <div class="artist mb-2">
+                        <b>THE NEW GUY SAID:</b>
+                    </div>
+                    <div class="equsedd mb-auto">
+                        <p class="m-0">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                    </div>
+                    <div class="readmore m-0">
+                        <p class="mb-4"><a href="../index.html">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row wow slow trei d-flex flex-row">
+                <div class="names col mt-3 d-flex flex-column pl-5">
+                    <div class="artist mb-2">
+                        <b>SUPERSTAR</b>
+                    </div>
+                    <div class="song mb-auto">
+                        <p class="m-0">Another tune<br>Killer Beats Studio</p>
+                    </div>
+                    <div class="switch d-flex flex-row mb-4">
+                        <div class="cerc" style="cursor: pointer;"  onclick="currentSlide(1)"></div>
+                        <div class="cerc ml-2" style="cursor: pointer;"  onclick="currentSlide(2)"></div>
+                        <div class="cerc marked ml-2" style="cursor: pointer;"  onclick="currentSlide(3)"></div>
+                        <div class="cerc ml-2" style="cursor: pointer;"  onclick="currentSlide(4)"></div>
+                    </div>
+                </div>
+                <div class="eqused col mt-3">
+                    <div class="artist mb-2">
+                        <b>EQUIPMENT USED</b>
+                    </div>
+                    <div class="equsedd">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quidem.</p>
+                    </div>
+                </div>
+                <div class="videosmall col my-0">
+                    <div class="video mx-auto d-flex flex-row">
+                        <div class="playbtn m-auto">
+                            <img src="assets/processed/Play.png" alt="play video" style="cursor: pointer;"  onclick="openmodal(e)">
+                        </div>
+                    </div>
+                </div>
+                <div class="testim col mt-3 d-flex flex-column text-right">
+                    <div class="artist mb-2">
+                        <b>SUPERSTAR SAID:</b>
+                    </div>
+                    <div class="equsedd mb-auto">
+                        <p class="m-0">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                    </div>
+                    <div class="readmore m-0">
+                        <p class="mb-4"><a href="../index.html">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row wow slow patru d-flex flex-row">
+                <div class="names col mt-3 d-flex flex-column pl-5">
+                    <div class="artist mb-2">
+                        <b>G-GANG</b>
+                    </div>
+                    <div class="song mb-auto">
+                        <p class="m-0">Awesomeous<br>Killer Beats Studio</p>
+                    </div>
+                    <div class="switch d-flex flex-row mb-4">
+                        <div class="cerc" style="cursor: pointer;"  onclick="currentSlide(1)"></div>
+                        <div class="cerc ml-2" style="cursor: pointer;"  onclick="currentSlide(2)"></div>
+                        <div class="cerc ml-2" style="cursor: pointer;"  onclick="currentSlide(3)"></div>
+                        <div class="cerc marked ml-2" style="cursor: pointer;"  onclick="currentSlide(4)"></div>
+                    </div>
+                </div>
+                <div class="eqused col mt-3">
+                    <div class="artist mb-2">
+                        <b>EQUIPMENT USED</b>
+                    </div>
+                    <div class="equsedd">
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quidem.</p>
+                    </div>
+                </div>
+                <div class="videosmall col my-0">
+                    <div class="video mx-auto d-flex flex-row">
+                        <div class="playbtn m-auto">
+                            <img src="assets/processed/Play.png" alt="play video" style="cursor: pointer;"  onclick="openmodal(d)">
+                        </div>
+                    </div>
+                </div>
+                <div class="testim col mt-3 d-flex flex-column text-right">
+                    <div class="artist mb-2">
+                        <b>G-GANG SAID:</b>
+                    </div>
+                    <div class="equsedd mb-auto">
+                        <p class="m-0">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                    </div>
+                    <div class="readmore m-0">
+                        <p class="mb-4"><a href="../index.html">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bord position-absolute d-none"></div>
+
+    </header>
+
+    <main style="padding-left: 100px; padding-right: 100px;">
+        <div class="container-fluid position-relative lax p-5">
+            
+            <div class="btleft position-absolute" style="bottom: 110px; left: 25px; cursor: pointer;" onclick="runLeft();">
+                    <img src="assets/processed/Backward.png" alt="left" style="width: 40px; height: 40px; transform: rotate(-90deg);">
+            </div>
+
+            <div class="btright position-absolute" style="bottom: 110px; right: 25px; cursor: pointer;" onclick="runRight();">
+                    <img src="assets/processed/Backward.png" alt="right" style="width: 40px; height: 40px; transform: rotate(90deg);">
+            </div>
+
+            <div class="row first">
+                <div class="title m-0">
+                    <p class="normal position-absolute" style="z-index: 2; margin-top: 2.3rem;">Portofolio</p>
+                    <p class="big" >Portofolio</p>
+                </div>
+                <div class="text mt-0 ml-0 mr-0 mb-5 pb-5 ">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex adipisci quaerat necessitatibus laudantium perferendis molestias molestiae quia eaque a corporis consectetur, ipsum dolorum nihil ducimus, voluptas alias sed eius deserunt est voluptatibus nulla minima maiores cupiditate! Aliquid provident officiis delectus nisi qui ex nam in fugiat, inventore, quam beatae aperiam?
+                    </p>
+                </div>
+            </div>
+
+            <div class="row second container-fluid p-0 m-0 d-flex flex-column justify-content-center">
+
+                <div class="videoclip player position-relative d-flex">
+                        <video src="../assets/one.mp4" height="525px" width="100%" controls poster="../assets/headers/person-singing-1370545.jpg">        Browser not supporting this video.
+                        </video>
+                        <div class="name position-absolute">
+                            <div class="title mb-2">
+                                <b style="font-size: 0.75rem;"></b>
+                            </div>
+                            <div class="song mb-2">
+                                <p class="m-0" style="font-size: 0.75rem;"><br></p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="videoclip list position-relative">
+
+                    <div class="runner d-flex flex-row flex-nowrap">
+
+                    <div class="sub photo mt-4 mr-4 mb-4 ml-0" style="height: 130px; min-width: 187px;">
+                        <div id="f1" class="film1 d-flex flex-row">
+                            <img id="p1" class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer; width: 60px; height: 60px;" onclick="poster(a)">
+                        </div>
+                    </div>
+
+                    <div class="sub photo m-4" style="height: 130px; min-width: 187px;">
+                        <div class="film2 d-flex flex-row">
+                            <img id="p2" class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer; width: 60px; height: 60px;" onclick="poster(b)">
+                        </div>
+                    </div>
+
+                    <div class="sub photo m-4" style="height: 130px; min-width: 187px;">
+                        <div class="film3 d-flex flex-row">
+                            <img id="p3" class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer; width: 60px; height: 60px;" onclick="poster(c)">
+                        </div>
+                    </div>
+
+                    <div class="sub photo m-4" style="height: 130px; min-width: 187px;">
+                        <div class="film4 d-flex flex-row">
+                            <img id="p4" class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer; width: 60px; height: 60px;" onclick="poster(d)">
+                        </div>               
+                    </div>
+
+                    <div class="sub photo m-4" style="height: 130px; min-width: 187px;">
+                        <div class="film5 d-flex flex-row">
+                            <img id="p5" class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer; width: 60px; height: 60px;" onclick="poster(e)">
+                        </div>
+                    </div>
+
+                    <div class="sub photo m-4" style="height: 130px; min-width: 187px;">
+                        <div class="film6 d-flex flex-row">
+                            <img id="p6" class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer; width: 60px; height: 60px;" onclick="poster(f)">
+                        </div>
+                    </div>
+
+                    <div class="sub photo mt-4 mb-4 ml-4 mr-0" style="height: 130px; min-width: 187px;">
+                        <div id="f7" class="film7 d-flex flex-row">
+                            <img id="p7" class="playnow m-auto" src="assets/processed/Play.png" alt="play"  style="cursor: pointer; width: 60px; height: 60px;" onclick="poster(g)">
+                        </div>
+                    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <article class="d-flex flex-column text-center" style="padding-left: 137px; padding-right: 137px;">
+        <p class="mx-auto px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore</p>
+        <a href="../contact/index.html" style="text-decoration: none;" class="details d-flex flex-row justify-content-between flex-nowrap mx-auto mb-5">
+            <b style="color: black; margin-right: 30px;">CONTACT</b><img class="m-auto" src="assets/processed//sagt.png" alt="details" style="height: 12px; width:12px;">
+        </a>
+    </article>
+
+    <footer style="padding-left: 100px; padding-right: 100px; max-height: 500px;">
+
+        <div class="terms">
+            <div class="closing">
+                <img src="assets/processed/Group 118.png" alt="close" style="cursor: pointer;">
+            </div>
+            <div class="conds m-auto">
+                <div class="d-flex flex-column justify-content-center m-3">
+                    <h1 class="" style="font-size: 30px;">Terms and Conditions</h1>
+                    <h3 class="my-4" style="font-size: 20px;">Concept Studio clients, please read Concept Studio Ltd. Terms and Conditions</h3>
+                    <p class="m-2" style="font-size: 10px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae itaque dicta maxime non officia vero esse facere soluta veritatis amet.</p>
+                    <p class="m-2" style="font-size: 10px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, distinctio ea. Veritatis quidem, accusantium vero provident molestias vitae deserunt aspernatur, itaque dolore eaque dolor necessitatibus. Voluptatem, nulla! Eum est reiciendis voluptas cupiditate sunt. Rerum, quis est aspernatur tempora accusamus cum.</p>
+                    <p class="m-2" style="font-size: 10px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, minima!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-5">
+
+            <div class="first m-2 p-0 d-flex flex-column">
+                <div class="title mr-2">
+                    <p style="font-size: 0.75rem;">CONTACT US</p>
+                </div>
+                <div class="text">
+                    <ul class="m-0" style="list-style-type: none;">
+                        <li style="font-size: 0.75rem;">+40 727 123 456</li>
+                        <li style="font-size: 0.75rem;">conceptstudio@mail.com</li>
+                        <li style="font-size: 0.75rem;">6 Str Nowhere, Romania</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="second m-2 p-0 d-flex flex-column">
+                <div class="title mr-2">
+                    <p style="font-size: 0.75rem;">SERVICES</p>
+                </div>
+                <div class="text">
+                    <ul class="m-0" style="list-style-type: none;">
+                        <li><a href="../contact/index.html" style="text-decoration: none; color: white; font-size: 0.75rem;">Contact Us</a></li>
+                        <li><a href="../contact/index.html" style="text-decoration: none; color: white; font-size: 0.75rem;">Ordering & Payment</a></li>
+                        <li><a href="../contact/index.html" style="text-decoration: none; color: white; font-size: 0.75rem;">Shipping</a></li>
+                        <li><a href="../contact/index.html" style="text-decoration: none; color: white; font-size: 0.75rem;">Returns</a></li>
+                        <li><a href="../contact/index.html" style="text-decoration: none; color: white; font-size: 0.75rem;">FAQ</a></li>
+                        <li><a href="../contact/index.html" style="text-decoration: none; color: white; font-size: 0.75rem;">Sizing Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="third d-flex flex-column justi my-0">
+                <div class="social mx-auto d-flex flex-row justify-content-between" style="width: 6rem;">
+                    <i class="fab fa-instagram m-auto" style="cursor: pointer; font-size: 1rem;"></i>
+                    <i class="fab fa-twitter m-auto" style="cursor: pointer; font-size: 1rem;"></i>
+                    <i class="fab fa-facebook m-auto" style="cursor: pointer; font-size: 1rem;"></i>
+                    <i class="fas fa-envelope m-auto" style="cursor: pointer; font-size: 1rem;"></i>
+                </div>
+                <div class="copyright mt-auto">
+                    <ul class="m-0 text-center" style="list-style-type: none;">
+                        <li style="font-size: 0.75rem;">@ Concept Studio 2019</li style="font-size: 0.75rem;">
+                        <li style="font-size: 0.75rem;">by <span style="cursor: pointer; font-size: 0.75rem;">Daniel Ioanitescu</span></li style="font-size: 0.75rem;">                                
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fourth m-2 p-0 d-flex flex-column">
+                <div class="title mr-2">
+                    <p style="font-size: 0.75rem;">RECOMANDED BY</p style="font-size: 0.75rem;">
+                </div>
+                <div class="text">
+                    <ul class="m-0" style="list-style-type: none;">
+                        <li style="cursor: pointer; font-size: 0.75rem;">Band One</li>
+                        <li style="cursor: pointer; font-size: 0.75rem;">Band Two</li>
+                        <li style="cursor: pointer; font-size: 0.75rem;">Band Three</li>
+                        <li style="cursor: pointer; font-size: 0.75rem;">Band Four</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fifth m-2 p-0 d-flex flex-column">
+                <div class="title mr-2">
+                    <p style="font-size: 0.75rem;">INFORMATION</p style="font-size: 0.75rem;">
+                </div>
+                <div class="text">
+                    <ul class="m-0" style="list-style-type: none;">
+                        <li style="cursor: pointer; font-size: 0.75rem;" onclick="openterms()">About KOncept Pro</li>
+                        <li style="cursor: pointer; font-size: 0.75rem;" onclick="openterms()">Work With US</li>
+                        <li style="cursor: pointer; font-size: 0.75rem;" onclick="openterms()">Privacy Policy</li>
+                        <li style="cursor: pointer; font-size: 0.75rem;" onclick="openterms()">Terms & Conditions</li>
+                        <li style="cursor: pointer; font-size: 0.75rem;" onclick="openterms()">Press Enquiries</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+footer {
+    background-color: $footer;
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .terms {
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        position: fixed !important;
+        width: 100vw;
+        height: 100vh;
+        background-color: $black90;
+        z-index: 5;
+        .closing {
+            img {
+                position: absolute;
+                right: 48px;
+                top: 25px;
+                opacity: 0.5;
+            }
+        }
+        .conds {
+            width: 75%;
+            height: 75%;
+            background-color: $white;
+            overflow-y: auto;
+            overflow-x: hidden;
+            div {
+                width: 100%;
+                height: fit-content;
+                overflow-y: hidden;
+                * {
+                    color: $black;
+                    overflow-y: hidden;
+                }
+            }
+        }
+    }
+}

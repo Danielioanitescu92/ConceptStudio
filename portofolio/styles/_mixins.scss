@@ -1,0 +1,8 @@
+@mixin back($nr) {
+    background-color: rgba($nr);
+  }
+  
+  @mixin flex($dir) {
+    display: flex;
+    flex-direction: $dir;
+  }

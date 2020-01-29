@@ -1,0 +1,275 @@
+@media screen and (max-width: 1200px) {
+
+    header {
+        .lowbar {
+            .row {
+                .eqused {
+                    display: none;
+                }
+                .testim {
+                    display: none !important;
+                }
+            }
+        }
+        .pagetitle {
+            padding-right: 100px !important;
+            .sm {
+                display: none !important;
+            }
+            .lg {
+                padding-right: 16px !important;
+                padding-left: 16px !important;
+                .lgdiv {
+                    margin: auto;
+                    width: 525px !important;
+                    text-align: center;
+                    .title {
+                        b {
+                            margin: auto;
+                            font-size: 45px !important;
+                        }
+                    }
+                    .text {
+                        p {
+                            font-size: 0.75rem !important;
+                        }
+                    }
+                    .details {
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        div {
+            .first {
+                display: none !important;
+            }
+            .second {
+                .title {
+                    display: none !important;
+                }
+            }
+            .fourth {
+                display: none !important;
+            }
+            .fifth {
+                .title {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        header {
+            nav {
+                .name {
+                    text-align: center;
+                    padding: 0 !important;
+                }
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: nowrap !important;
+                .container {
+                    display: none;
+                    padding-right: 0;
+                }
+            }
+            .burger {
+                position: absolute;
+                right: 36px;
+                top: 36px;
+                display: flex !important;
+                justify-content: flex-end;
+            }
+        }
+        main {
+            padding-right: 10px !important;    
+        }
+        article {
+            padding-right: 58px !important; 
+        }
+        footer {
+            padding-right: 0 !important;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        main {
+            .btelft {
+                display: block !important;
+            }
+            .btright {
+                display: block !important;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        body {
+            background-size: 100% 65%;
+        }
+        header {
+            .lowbar {
+                display: none;
+            }
+            .bord {
+                display: block !important;
+                bottom: 0;
+            }
+        }
+        main {
+            div {
+                .first {
+                    padding: 1rem !important;
+                    .title {
+                        .normal {
+                            font-size: 2.5rem !important;
+                            margin-top: 0.8rem !important;
+                        }
+                        .big {
+                            font-size: 3.5rem !important;
+                        }
+                    }
+                    .text {
+                        padding: 0 !important;
+                        p {
+                            font-size: 1rem !important;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            position: relative;
+            overflow: hidden;
+            div {
+                overflow: hidden;
+                height: 500px;
+                .second {
+                    .text {
+                        margin-top: 80px;
+                    }
+                }
+                .third {
+                    position: absolute;
+                    overflow: hidden;
+                    width: 190px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    .social {
+                        height: 100%;
+                    }
+                    .copyright {
+                        height: 100%;
+                        overflow: hidden;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 250px !important;
+                    }
+                }
+                .fifth {
+                    .text {
+                        margin-top: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        body {
+            background-size: 100% 63%;
+        }
+        header {
+            .menu {
+                z-index: 5;
+                padding: 0 !important;
+            }
+            nav {
+                padding: 0 !important;
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+                .name {
+                    padding-top: 0 !important;
+                }
+            }            
+            .burger {
+                top: 25px !important;
+                right: 20px !important;
+                img {
+                    width: 60%;
+                }
+            }
+            .slider {
+                position: absolute !important;
+                .videosl {
+                    width: 100vw;
+                    .video {
+                        div {
+                            margin: auto !important;
+                        }
+                    }
+                    .bttup {
+                        left: calc(50% - 20px) !important;
+                    }
+                    .bttbottom {
+                        left: calc(50% - 20px) !important;
+                    }
+                }
+                .sidebar {
+                    background: $transparent;
+                    background-size: 100%;
+                    height: 100%;
+                    padding-left: 20px !important;
+                    padding-right: 20px !important;
+                    padding-top: 25px !important;
+                    padding-bottom: 25px !important;
+                    div {
+                        img {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+            .pagetitle {
+                padding: 0 !important;
+                .lg {
+                    .lgdiv {
+                        .title {
+                            b {
+                                font-size: 45px !important;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+        main {
+            padding: 0 !important;
+            .btelft {
+                left: 10px !important;
+            }
+            .lax {
+                .second {
+                    width: 100vw !important;
+                    margin-left: -50px !important;
+                }
+            }
+        }
+        article {
+            padding-left: 10vw !important;
+            padding-right: 10vw !important;
+        }
+        footer {
+            padding-left: 0 !important;
+        }
+
+    }
+
+}

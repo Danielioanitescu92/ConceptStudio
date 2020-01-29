@@ -1,0 +1,129 @@
+.lowbar {
+    background-color: $lowbar;
+    .wow {
+
+        .names {
+            div {
+                b, p {
+                    font-size: 0.85rem;
+                }
+            }
+            .switch { 
+                .cerc {
+                    background-color: $whitemed;
+                    height: 5px;
+                    width: 5px;
+                    border-radius: 5px;
+                }
+
+                .marked {
+                    background-color: $white !important;
+                    height: 5px;
+                    width: 5px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .eqused {
+            div {
+                b, p {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+
+        .testim {
+            div {
+                b, p {
+                    font-size: 0.85rem;
+                }
+            }
+            .readmore {
+                p {
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .videosmall {
+            min-width: 300px;
+    
+            .video {
+                opacity: 0.7;
+                height: 130px;
+                width: 187px;
+                background-size: 100% 100%;
+                .playbtn {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+    .unu {
+        opacity: 1;
+
+        .videosmall {
+            .video {
+                background: url("../assets/headers/person-singing-1370545.jpg") center top;
+                background-size: 100% 100%;
+            }
+        }
+    }
+    .doi {
+        display: none;
+        opacity: 0;
+
+        .videosmall {
+            .video {
+                background: url("../assets/headers/photo-of-man-playing-guitar-3045398.jpg") center top;
+                background-size: 100% 100%;
+            }
+        }
+    }
+    .trei {
+        display: none;
+        opacity: 0;
+
+        .videosmall {
+            .video {
+                background: url("../assets/headers/man-wearing-denim-jacket-singing-on-stage-894156.jpg") center top;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+    .patru {
+        display: none;
+        opacity: 0;
+
+        .videosmall {
+            .video {
+                background: url("../assets/headers/man-standing-while-singing-2067677.jpg") center top;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+
+
+
+/*-------------------Animation------------------ */
+.slow {
+    animation-name: slow;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+  }
+  
+  @keyframes slow {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }

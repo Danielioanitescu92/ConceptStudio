@@ -1,0 +1,108 @@
+main {
+    .lax {
+        .btleft {
+            z-index: 2;
+        }
+        .btright {
+            z-index: 2;
+        }
+    }
+    .first {
+        .title {
+            .normal {
+                color: $white;
+                font-size: 2.5rem;
+            }
+            .big {
+                color: $onwhitelight;
+                font-size: 4.5rem;
+            }
+        }
+        .text {
+            font-size: 1rem;
+        }
+    }
+    div {
+        .first {
+            .text {
+                p{
+                    color: $whitemed;
+                }
+            }
+        }
+        .second {
+            .player {
+                width: 100%;
+                height: 100%;
+                video {
+                    object-fit: cover;
+                }
+                .name {
+                    visibility: visible;
+                    opacity: 1;
+                    top: 36px;
+                    left: 36px;
+                }
+            }
+            .list::-webkit-scrollbar {
+                display: none;
+            }
+            .list {
+                width: 100%;
+                overflow-x: scroll;
+                .runner {
+                    width: fit-content;
+                }
+                .sub{
+                    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+                    overflow: hidden;
+                    .film1 {
+                        background-image: url("../assets/headers/person-singing-1370545.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 132px;
+                    }
+                    .film2 {
+                        background-image: url("../assets/headers/group-of-teens-singing-1845085.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 132px;
+                    }
+                    .film3 {
+                        background-image: url("../assets/headers/man-standing-surrounded-with-smoke-1916818.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center bottom;
+                        height: 132px;
+                    }
+                    .film4 {
+                        background-image: url("../assets/headers/man-standing-while-singing-2067677.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 132px;
+                    }
+                    .film5 {
+                        background-image: url("../assets/headers/man-wearing-denim-jacket-singing-on-stage-894156.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 132px;
+                    }
+                    .film6 {
+                        background-image: url("../assets/headers/person-singing-while-playing-electric-guitar-1864637.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 132px;
+                    }
+                    .film7 {
+                        background-image: url("../assets/headers/photo-of-man-playing-guitar-3045398.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 132px;
+                    }
+                }
+            }
+        }
+    }
+}

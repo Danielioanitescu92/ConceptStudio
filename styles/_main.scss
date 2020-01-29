@@ -1,0 +1,88 @@
+main {
+    .first {
+        .title {
+            .normal {
+                color: $white;
+                font-size: 2.5rem;
+            }
+            .big {
+                color: $onwhitelight;
+                font-size: 4.5rem;
+            }
+        }
+        .text {
+            font-size: 1rem;
+        }
+    }
+    div {
+        .first {
+            .text {
+                p{
+                    color: $whitemed;
+                }
+            }
+        }
+        .second {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+            div {
+                .details {
+                    background-image: radial-gradient(farthest-corner at 100% 0%, rgba(42,42,42,1), rgba(0,0,0,1));
+                    overflow: hidden;
+                    .names{
+                        overflow: hidden;
+                        b, p {
+                            color: $whitemed;
+                        }
+                    }
+                    .description {
+                        p {
+                            color: $whitemed;
+                            overflow: hidden;
+                        }
+                    }
+                    .contact {
+                        .social {
+                            i {
+                                font-size: 1rem;
+                                color: $whitemed;
+                            }
+                        }
+                        button {
+                            width: 90px;
+                            height: 30px;
+                            font-size: 0.5rem;
+                            background-color: rgb(123,123,123);
+                            border: 0 solid white;
+                            border-radius: 4px;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            .director {
+                .photo {
+                background-image: url('../assets/headers/dir2.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                }
+            }
+            .cameraman {
+                .photo {
+                background-image: url("../assets/headers/man-using-camera-2726126.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 0%;
+                }
+            }
+            .editor {
+                .photo {
+                    background-image: url("../assets/headers/man-in-gray-crew-neck-t-shirt-holding-a-camera-2925322.jpg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 80% 0%;
+                }                
+            }
+        }
+    }
+}
+

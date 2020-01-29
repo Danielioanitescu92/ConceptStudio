@@ -1,0 +1,1141 @@
+body, html, * {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+}
+
+body {
+  background: url("../assets/processed/A PC Rectangle 4.png") no-repeat;
+  background-size: 100% 78%;
+  width: 100vw;
+  height: 7%;
+}
+
+header {
+  background-image: url("../assets/headers/side-view-photo-of-black-dslr-camera-1595241.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+header .menu {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1a1a1a;
+  z-index: 3;
+}
+
+header .menu .nav ul li form input[type=text] {
+  background-color: #a5a5a5;
+  color: white;
+  background-image: url("../assets/processed/Group 174.png");
+  background-position: 10px 6px;
+  background-repeat: no-repeat;
+  border: 2px solid #8a8a8a;
+  border-radius: 10px;
+  padding: 6px 20px 6px 70px;
+}
+
+header .menu .nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+header .menu .nav ul li:nth-child(3) a {
+  text-decoration: none;
+  color: white;
+}
+
+header .modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed !important;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+}
+
+header .modal .cont {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  z-index: 6;
+}
+
+header .modal .closing img {
+  position: absolute;
+  right: 48px;
+  top: 25px;
+  opacity: 0.5;
+  z-index: 7;
+}
+
+header .modal .video {
+  width: 75%;
+  height: 75%;
+  z-index: 7;
+}
+
+header .modal .video video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .modal .video .name {
+  top: 48px;
+  left: 48px;
+}
+
+header nav .row div {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+header nav .row .actual {
+  color: white;
+}
+
+header .bord {
+  background: url("../assets/processed/C Iphone Border.png");
+  background-size: cover;
+  height: 31px;
+  width: 100vw;
+}
+
+nav .name img {
+  width: 216px;
+  height: 79px;
+}
+
+nav .container {
+  padding: 22px;
+}
+
+nav .container .navmenu {
+  visibility: visible;
+}
+
+nav .container .navmenu div a {
+  font-size: 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+nav .container .navmenu div img {
+  width: 12px;
+  height: 12px;
+}
+
+nav .container .navmenu div:nth-child(3) a {
+  color: white;
+}
+
+nav .container .formsearch {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: -40px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+nav .container .formsearch .gosearch {
+  cursor: pointer;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+nav .container .formsearch .gosearch img {
+  margin: auto;
+  width: 12px;
+  height: 12px;
+}
+
+nav .container .formsearch form {
+  width: 80%;
+}
+
+nav .container .formsearch form input[type=text] {
+  float: right;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 15px 0 15px 0;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+nav .container .formsearch form input:focus {
+  outline: none;
+}
+
+nav .container .formsearch .closesearsch {
+  cursor: pointer;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+nav .container .formsearch .closesearsch img {
+  width: 14px;
+  height: 14px;
+  margin: auto;
+}
+
+header .sidebar {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8a8a8a), to(#292929));
+  background: linear-gradient(#8a8a8a, #292929);
+  background-size: 100%;
+  height: 100%;
+  padding: 2.5rem;
+}
+
+header .sidebar .social i {
+  font-size: 1rem;
+}
+
+header .sidebar div img {
+  width: 23px;
+  height: 23px;
+}
+
+header .slider .videosl::-webkit-scrollbar {
+  display: none;
+}
+
+header .slider .videosl {
+  background: radial-gradient(farthest-corner at 0% 0%, #414141, black);
+  background-size: 100%;
+  height: 100vh;
+}
+
+header .slider .videosl div a img {
+  width: 40px;
+  height: 40px;
+}
+
+header .slider .videosl .video div img {
+  width: 60px;
+  height: 60px;
+}
+
+header .slider .videosl .video .film1 {
+  background-image: url("../assets/headers/person-singing-1370545.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .video .film2 {
+  background-image: url("../assets/headers/group-of-teens-singing-1845085.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .video .film3 {
+  background-image: url("../assets/headers/man-standing-surrounded-with-smoke-1916818.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .video .film4 {
+  background-image: url("../assets/headers/man-standing-while-singing-2067677.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .video .film5 {
+  background-image: url("../assets/headers/man-wearing-denim-jacket-singing-on-stage-894156.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .video .film6 {
+  background-image: url("../assets/headers/person-singing-while-playing-electric-guitar-1864637.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .video .film7 {
+  background-image: url("../assets/headers/photo-of-man-playing-guitar-3045398.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .text b {
+  font-size: 0.75rem;
+}
+
+header .slider .videosl .text div p {
+  font-size: 0.75rem;
+}
+
+.lowbar {
+  background-color: rgba(59, 58, 58, 0.27);
+}
+
+.lowbar .wow .names div b, .lowbar .wow .names div p {
+  font-size: 0.85rem;
+}
+
+.lowbar .wow .names .switch .cerc {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 5px;
+  width: 5px;
+  border-radius: 5px;
+}
+
+.lowbar .wow .names .switch .marked {
+  background-color: white !important;
+  height: 5px;
+  width: 5px;
+  border-radius: 5px;
+}
+
+.lowbar .wow .eqused div b, .lowbar .wow .eqused div p {
+  font-size: 0.85rem;
+}
+
+.lowbar .wow .testim div b, .lowbar .wow .testim div p {
+  font-size: 0.85rem;
+}
+
+.lowbar .wow .testim .readmore p a {
+  text-decoration: none;
+  color: white;
+}
+
+.lowbar .wow .videosmall {
+  min-width: 300px;
+}
+
+.lowbar .wow .videosmall .video {
+  opacity: 0.7;
+  height: 130px;
+  width: 187px;
+  background-size: 100% 100%;
+}
+
+.lowbar .wow .videosmall .video .playbtn img {
+  width: 60px;
+  height: 60px;
+}
+
+.lowbar .unu {
+  opacity: 1;
+}
+
+.lowbar .unu .videosmall .video {
+  background: url("../assets/headers/person-singing-1370545.jpg") center top;
+  background-size: 100% 100%;
+}
+
+.lowbar .doi {
+  display: none;
+  opacity: 0;
+}
+
+.lowbar .doi .videosmall .video {
+  background: url("../assets/headers/photo-of-man-playing-guitar-3045398.jpg") center top;
+  background-size: 100% 100%;
+}
+
+.lowbar .trei {
+  display: none;
+  opacity: 0;
+}
+
+.lowbar .trei .videosmall .video {
+  background: url("../assets/headers/man-wearing-denim-jacket-singing-on-stage-894156.jpg") center top;
+  background-size: cover;
+  background-position: center;
+}
+
+.lowbar .patru {
+  display: none;
+  opacity: 0;
+}
+
+.lowbar .patru .videosmall .video {
+  background: url("../assets/headers/man-standing-while-singing-2067677.jpg") center top;
+  background-size: cover;
+  background-position: center;
+}
+
+/*-------------------Animation------------------ */
+.slow {
+  -webkit-animation-name: slow;
+          animation-name: slow;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes slow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+nav .name img {
+  width: 216px;
+  height: 79px;
+}
+
+nav .container {
+  padding: 22px;
+}
+
+nav .container .navmenu {
+  visibility: visible;
+}
+
+nav .container .navmenu div a {
+  font-size: 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+nav .container .navmenu div img {
+  width: 12px;
+  height: 12px;
+}
+
+nav .container .navmenu div:nth-child(3) a {
+  color: white;
+}
+
+nav .container .formsearch {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: -40px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+nav .container .formsearch .gosearch {
+  cursor: pointer;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+nav .container .formsearch .gosearch img {
+  margin: auto;
+  width: 12px;
+  height: 12px;
+}
+
+nav .container .formsearch form {
+  width: 80%;
+}
+
+nav .container .formsearch form input[type=text] {
+  float: right;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 15px 0 15px 0;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+nav .container .formsearch form input:focus {
+  outline: none;
+}
+
+nav .container .formsearch .closesearsch {
+  cursor: pointer;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+nav .container .formsearch .closesearsch img {
+  width: 14px;
+  height: 14px;
+  margin: auto;
+}
+
+header .sidebar {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8a8a8a), to(#292929));
+  background: linear-gradient(#8a8a8a, #292929);
+  background-size: 100%;
+  height: 100%;
+  padding: 2.5rem;
+}
+
+header .sidebar .social i {
+  font-size: 1rem;
+}
+
+header .sidebar div img {
+  width: 23px;
+  height: 23px;
+}
+
+header .slider .videosl::-webkit-scrollbar {
+  display: none;
+}
+
+header .slider .videosl {
+  background: radial-gradient(farthest-corner at 0% 0%, #414141, black);
+  background-size: 100%;
+  height: 100vh;
+}
+
+header .slider .videosl div a img {
+  width: 40px;
+  height: 40px;
+}
+
+header .slider .videosl .video div img {
+  width: 60px;
+  height: 60px;
+}
+
+header .slider .videosl .video .film1 {
+  background-image: url("../assets/headers/person-singing-1370545.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .video .film2 {
+  background-image: url("../assets/headers/group-of-teens-singing-1845085.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .video .film3 {
+  background-image: url("../assets/headers/man-standing-surrounded-with-smoke-1916818.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .video .film4 {
+  background-image: url("../assets/headers/man-standing-while-singing-2067677.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .video .film5 {
+  background-image: url("../assets/headers/man-wearing-denim-jacket-singing-on-stage-894156.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .video .film6 {
+  background-image: url("../assets/headers/person-singing-while-playing-electric-guitar-1864637.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .video .film7 {
+  background-image: url("../assets/headers/photo-of-man-playing-guitar-3045398.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 132px;
+}
+
+header .slider .videosl .text b {
+  font-size: 0.75rem;
+}
+
+header .slider .videosl .text div p {
+  font-size: 0.75rem;
+}
+
+.lowbar {
+  background-color: rgba(59, 58, 58, 0.27);
+}
+
+.lowbar .wow .names div b, .lowbar .wow .names div p {
+  font-size: 0.85rem;
+}
+
+.lowbar .wow .names .switch .cerc {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 5px;
+  width: 5px;
+  border-radius: 5px;
+}
+
+.lowbar .wow .names .switch .marked {
+  background-color: white !important;
+  height: 5px;
+  width: 5px;
+  border-radius: 5px;
+}
+
+.lowbar .wow .eqused div b, .lowbar .wow .eqused div p {
+  font-size: 0.85rem;
+}
+
+.lowbar .wow .testim div b, .lowbar .wow .testim div p {
+  font-size: 0.85rem;
+}
+
+.lowbar .wow .testim .readmore p a {
+  text-decoration: none;
+  color: white;
+}
+
+.lowbar .wow .videosmall {
+  min-width: 300px;
+}
+
+.lowbar .wow .videosmall .video {
+  opacity: 0.7;
+  height: 130px;
+  width: 187px;
+  background-size: 100% 100%;
+}
+
+.lowbar .wow .videosmall .video .playbtn img {
+  width: 60px;
+  height: 60px;
+}
+
+.lowbar .unu {
+  opacity: 1;
+}
+
+.lowbar .unu .videosmall .video {
+  background: url("../assets/headers/person-singing-1370545.jpg") center top;
+  background-size: 100% 100%;
+}
+
+.lowbar .doi {
+  display: none;
+  opacity: 0;
+}
+
+.lowbar .doi .videosmall .video {
+  background: url("../assets/headers/photo-of-man-playing-guitar-3045398.jpg") center top;
+  background-size: 100% 100%;
+}
+
+.lowbar .trei {
+  display: none;
+  opacity: 0;
+}
+
+.lowbar .trei .videosmall .video {
+  background: url("../assets/headers/man-wearing-denim-jacket-singing-on-stage-894156.jpg") center top;
+  background-size: cover;
+  background-position: center;
+}
+
+.lowbar .patru {
+  display: none;
+  opacity: 0;
+}
+
+.lowbar .patru .videosmall .video {
+  background: url("../assets/headers/man-standing-while-singing-2067677.jpg") center top;
+  background-size: cover;
+  background-position: center;
+}
+
+/*-------------------Animation------------------ */
+.slow {
+  -webkit-animation-name: slow;
+          animation-name: slow;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@keyframes slow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+main {
+  overflow: hidden;
+}
+
+main .lax {
+  overflow: hidden;
+}
+
+main .first .title .normal {
+  color: white;
+  font-size: 2.5rem;
+}
+
+main .first .title .big {
+  color: rgba(112, 112, 112, 0.1);
+  font-size: 4.5rem;
+}
+
+main .first .text {
+  font-size: 1rem;
+}
+
+main div {
+  overflow: hidden;
+}
+
+main div .first .text p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+main div .second {
+  height: 50vw;
+  min-height: 260px;
+  overflow: hidden;
+  -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+main div .second .screen {
+  background-image: url("../assets/headers/photo-studio-with-white-wooden-framed-wall-mirror-134469.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+main div .second .container {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 2;
+}
+
+main div .second .container .list {
+  margin-top: auto;
+  width: 50%;
+  min-width: 240px;
+  margin-bottom: 12px;
+  bottom: 24px;
+  left: 24px;
+  overflow: hidden;
+}
+
+main div .second .container .list img {
+  width: 65px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+main div .second .name {
+  margin-top: 24px;
+  left: 24px;
+  z-index: 2;
+  width: 225px;
+}
+
+article p {
+  font-size: 0.75rem;
+  color: black;
+}
+
+article div {
+  width: 8rem;
+}
+
+article div b {
+  color: black;
+}
+
+article div img {
+  width: 1rem;
+  height: 1rem;
+}
+
+footer {
+  background-color: #1a1a1a;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .terms {
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed !important;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 5;
+}
+
+footer .terms .closing img {
+  position: absolute;
+  right: 48px;
+  top: 25px;
+  opacity: 0.5;
+}
+
+footer .terms .conds {
+  width: 75%;
+  height: 75%;
+  background-color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+footer .terms .conds div {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-y: hidden;
+}
+
+footer .terms .conds div * {
+  color: black;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  header .lowbar .row .eqused {
+    display: none;
+  }
+  header .lowbar .row .testim {
+    display: none !important;
+  }
+  header .pagetitle {
+    padding-right: 100px !important;
+  }
+  header .pagetitle .sm {
+    display: none !important;
+  }
+  header .pagetitle .lg {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+  header .pagetitle .lg .lgdiv {
+    margin: auto;
+    width: 525px !important;
+    text-align: center;
+  }
+  header .pagetitle .lg .lgdiv .title {
+    margin: auto;
+  }
+  header .pagetitle .lg .lgdiv .title b {
+    margin: auto;
+    font-size: 45px !important;
+  }
+  header .pagetitle .lg .lgdiv .text p {
+    font-size: 0.75rem !important;
+  }
+  header .pagetitle .lg .lgdiv .details {
+    margin: auto;
+  }
+  footer div .first {
+    display: none !important;
+  }
+  footer div .second .title {
+    display: none !important;
+  }
+  footer div .fourth {
+    display: none !important;
+  }
+  footer div .fifth .title {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 1024px) {
+  header nav {
+    padding-right: 137px !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
+  }
+  header nav .name {
+    text-align: center;
+    padding: 0 !important;
+  }
+  header nav .container {
+    display: none;
+    padding-right: 0;
+  }
+  header .burger {
+    position: absolute;
+    right: 48px;
+    top: 48px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  main {
+    padding-right: 10px !important;
+  }
+  article {
+    padding-right: 58px !important;
+  }
+  footer {
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 600px) {
+  body {
+    background-size: 100% 65%;
+  }
+  header .lowbar {
+    display: none;
+  }
+  header .bord {
+    display: block !important;
+    bottom: 0;
+  }
+  main div .first {
+    padding: 1rem !important;
+  }
+  main div .first .title .normal {
+    font-size: 2.5rem !important;
+    margin-top: 0.8rem !important;
+  }
+  main div .first .title .big {
+    font-size: 3.5rem !important;
+  }
+  main div .first .text {
+    padding: 0 !important;
+  }
+  main div .first .text p {
+    font-size: 1rem !important;
+  }
+  main div .second .container .list {
+    margin-bottom: 0 !important;
+  }
+  main div .second .container .name {
+    margin-top: 16px !important;
+  }
+  footer {
+    position: relative;
+    overflow: hidden;
+  }
+  footer div {
+    overflow: hidden;
+    height: 500px;
+  }
+  footer div .second .text {
+    margin-top: 80px;
+  }
+  footer div .third {
+    position: absolute;
+    overflow: hidden;
+    width: 190px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  footer div .third .social {
+    height: 100%;
+  }
+  footer div .third .copyright {
+    height: 100%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px !important;
+  }
+  footer div .fifth .text {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 425px) {
+  header .menu {
+    z-index: 5;
+    padding: 0 !important;
+  }
+  header nav {
+    padding: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  header nav .name {
+    padding-top: 0 !important;
+  }
+  header .burger {
+    top: 25px !important;
+    right: 20px !important;
+  }
+  header .burger img {
+    width: 60%;
+  }
+  header .slider {
+    position: absolute !important;
+  }
+  header .slider .videosl {
+    width: 100vw;
+  }
+  header .slider .videosl .video div {
+    margin: auto !important;
+  }
+  header .slider .videosl .bttup {
+    left: calc(50% - 20px) !important;
+  }
+  header .slider .videosl .bttbottom {
+    left: calc(50% - 20px) !important;
+  }
+  header .slider .sidebar {
+    background: rgba(255, 255, 255, 0);
+    background-size: 100%;
+    height: 100%;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+  header .slider .sidebar div img {
+    width: 60%;
+  }
+  header .pagetitle {
+    padding: 0 !important;
+  }
+  header .pagetitle .lg .lgdiv .title b {
+    font-size: 45px !important;
+  }
+  main {
+    padding: 0 !important;
+  }
+  main .lax .second {
+    width: 100vw !important;
+    margin-left: -50px !important;
+  }
+  article {
+    padding-left: 10vw !important;
+    padding-right: 10vw !important;
+  }
+  footer {
+    padding-left: 0 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

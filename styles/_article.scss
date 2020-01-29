@@ -1,0 +1,16 @@
+article {
+    p{
+        font-size: 0.75rem;
+        color: $black;
+    }
+    div {
+        width: 8rem;
+        b{
+            color: $black;
+        }
+        img {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+}
